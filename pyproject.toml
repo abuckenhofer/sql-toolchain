@@ -1,0 +1,7 @@
+[project]
+name = "sql-toolchain-demo"
+version = "0.1.0"
+dependencies = ["sqlfluff"]
+
+[project.entry-points.sqlfluff]
+abu = "sqlfluff_rules"
