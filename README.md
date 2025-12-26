@@ -35,6 +35,17 @@ The directory sqlfluff_rules contains an example for an individual rule (sql-fil
 
 .github/workflows/sqlfluff.yml contains automation for github pushes. The file sqlfluff-annotations.json contains the violations.
 
+Or even better use a pre-commit hook.
+```
+pip install pre-commit
+pre-commit install
+```
+The file .pre-commit-config.yaml contains the configuration. Check manually:
+```
+pre-commit run --all-files
+```
+or alternatively git commit performs linting automatically.
+
 **Roadmap**
 
 Planned integrations include Liquibase for database change management and migrations, plus additional checks to support SQL documentation and governance.
