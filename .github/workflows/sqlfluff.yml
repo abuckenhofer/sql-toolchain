@@ -20,8 +20,7 @@ jobs:
       - name: Install SQLFluff + custom rules
         run: |
           python -m pip install --upgrade pip
-          python -m pip install sqlfluff
-          python -m pip install -e ./sqlfluff_rules
+          python -m pip install -e .
 
       - name: Lint SQL in src (create annotations json)
         run: |
