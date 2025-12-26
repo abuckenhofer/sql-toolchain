@@ -2,6 +2,12 @@ name: SQLFluff Lint
 
 on:
   push:
+    paths:
+      - "src/**/*.sql"
+      - "sqlfluff_rules/**"
+      - ".sqlfluff"
+      - ".sqlfluffignore"
+      - ".github/workflows/sqlfluff.yml"
 
 permissions:
   contents: read
