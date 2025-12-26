@@ -16,16 +16,20 @@ Create a new repo from this template (or fork it).
 
 Adjust the SQLFluff configuration to your dialect and team conventions.
 
-Install Python, create a virtual environment and setup the project
+Install Python, create a virtual environment and setup the project:
+```
 python -m pip install -e .
+```
 
-Run linting locally and in CI to keep SQL quality consistent across the team.
-
-Linting recursively a directory (default are *.sql files)
+Linting recursively a directory (default are *.sql files):
+```
 python -m sqlfluff lint src
+```
 
-Fixing recursively a directory
+Fixing recursively a directory:
+```
 python -m sqlfluff fix src
+```
 
 The directory sqlfluff_rules contains an example for an individual rule (sql-files requiring a comment at the beginning)
 
