@@ -29,7 +29,7 @@ python -m sqlfluff fix src
 
 The directory sqlfluff_rules contains an example for an individual rule (sql-files requiring a comment at the beginning)
 
-.github/workflows/sqlfluff.yml contains automation for github pushes or merges.
+.github/workflows/sqlfluff.yml contains automation for github pushes. The file sqlfluff-annotations.json contains the violations.
 
 **Roadmap**
 
