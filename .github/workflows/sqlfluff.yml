@@ -41,6 +41,12 @@ jobs:
           title: "SQLFluff"
           input: "sqlfluff_annotations.json"
 
+      - name: Upload SQLFluff annotations json
+        uses: actions/upload-artifact@v4
+        with:
+          name: sqlfluff-annotations
+          path: sqlfluff_annotations.json
+
       - name: Fail job if lint failed
         if: steps.sqlfluff_lint.outputs.exit_code != '0'
         run: |
